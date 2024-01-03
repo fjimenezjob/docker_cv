@@ -6,7 +6,7 @@
 
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <h1 class="title is-3">Fran Jiménez COMPROBACION</h1>
+                <h1 class="title is-3">Fran Jiménez</h1>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
                     data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
@@ -17,30 +17,30 @@
 
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start">
-                    <a class="navbar-item">
-                        Home
+                    <a class="navbar-item" href="#" onclick="scrollToSection('experiencia')"> 
+                        Experiencia
                     </a>
 
-                    <a class="navbar-item">
-                        Documentation
+                    <a class="navbar-item" href="#" onclick="scrollToSection('habilidades')">
+                        Habilidades 
                     </a>
 
                     <div class="navbar-item has-dropdown is-hoverable">
                         <a class="navbar-link">
-                            More
+                            Mis redes
                         </a>
 
                         <div class="navbar-dropdown">
-                            <a class="navbar-item">
-                                About
+                            <a class="navbar-item" href="https://www.linkedin.com/in/fran-jimenez-gomez-35b447186/" target="_blank">
+                                Linkedin
                             </a>
-                            <a class="navbar-item">
-                                Jobs
+                            <a class="navbar-item" href="https://github.com/fjimenezJOB" target="_blank">
+                                GitHub
                             </a>
-                            <a class="navbar-item">
-                                Contact
+                            <a class="navbar-item" href="https://hub.docker.com/u/fjimenezjob" target="_blank">
+                                DockerHub
                             </a>
-                            <hr class="navbar-divider">
+                            <hr class="navbar-divider" >
                             <a class="navbar-item">
                                 Report an issue
                             </a>
@@ -87,9 +87,30 @@
 
     <section id="educacion" class="section">
         <div class="container">
-            <h2 class="title is-3">Educación</h2>
+
+            <h2 class="title is-3">Estudios</h2>
+
             <div class="box">
-                <p class="subtitle is-5">Nombre del Grado | Universidad | Fecha</p>
+                <p class="subtitle is-5">BootCamp - BACKEND | BIT COMPUTER TRAINING | 2021
+                    <a href="https://onedrive.live.com/?authkey=%21AFlI1sbJV4zj0dk&id=7CBE0E9E8BAC20D2%2144361&cid=7CBE0E9E8BAC20D2&parId=root&parQt=sharedby&o=OneUp" target="_blank"> Diploma</a>
+                </p>
+            </div>
+
+            <div class="box">
+                <p class="subtitle is-5">Programación en lenguajes estructurados de aplicaciones de gestión ( IFCD0111 ) | Muévete Formación | 2020
+                    <a href="https://onedrive.live.com/?authkey=%21ACjOzy4fmWGR2p8&id=7CBE0E9E8BAC20D2%2133142&cid=7CBE0E9E8BAC20D2&parId=root&parQt=sharedby&o=OneUp" target="_blank"> Diploma</a>
+                </p>
+            </div>
+            <div class="box">
+                <p class="subtitle is-5">Programación con lenguajes orientados a objetos y bases de datos relacionales ( IFCD0112 ) | Muévete Formación | 2020
+                    <a href="https://onedrive.live.com/?authkey=%21ACjOzy4fmWGR2p8&id=7CBE0E9E8BAC20D2%2133142&cid=7CBE0E9E8BAC20D2&parId=root&parQt=sharedby&o=OneUp" target="_blank"> Diploma</a>
+                </p>
+            </div>
+            <div class="box">
+                <p class="subtitle is-5">C.F.G.M. - Panadería, Pastelería y Confitería | Escola d'Hotelería i Turisme de Lleida | 2014</p>
+                <ul>
+                    <li>ERASMUS en Torino (Italia)</li>
+                </ul>
             </div>
             <!-- Puedes agregar más detalles educativos -->
         </div>
@@ -99,13 +120,55 @@
         <div class="container">
             <h2 class="title is-3">Habilidades</h2>
             <div class="box">
-                <ul>
-                    <li>Habilidad 1</li>
-                    <li>Habilidad 2</li>
-                    <!-- Agrega más habilidades según sea necesario -->
-                </ul>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Java</td>
+                        <td>Metodología Agile</td>
+                        <td>Adobe XD</td>
+                        <td>COBOL</td>
+                      </tr>
+                      <tr>
+                        <td>Maven</td>
+                        <td>Python</td>
+                        <td>Jira</td>
+                      </tr>
+                      <tr>
+                        <td>SpringBoot</td>
+                        <td>Mongo DB</td>
+                        <td>Windows</td>
+                      </tr>
+                      <tr>
+                        <td>JSP</td>
+                        <td>MySQL</td>
+                        <td>Office 365</td>
+                      </tr>
+                      <tr>
+                        <td>Git</td>
+                        <td>JavaScript</td>
+                        <td>Docker</td>
+                    </tr>
+                    </tbody>
+                  </table>
             </div>
         </div>
     </section>
 </div>
+<script>
+    function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    }
+</script>
+
 {% endblock %}
